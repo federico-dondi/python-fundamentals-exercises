@@ -1,4 +1,4 @@
-# 05 - Given one (integer) number via input, calculate if it's odd or even.
+# 05 - Given 1 (integer) number via input, calculate if it's odd or even.
 
 a = int(input("Enter a (integer) value: "))
 

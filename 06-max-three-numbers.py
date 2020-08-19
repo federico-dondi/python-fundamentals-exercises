@@ -1,4 +1,4 @@
-# 06 - Given three (integer) numbers via input, calculate the maximum and print it on the terminal.
+# 06 - Given 3 (integer) numbers via input, calculate the maximum and print it on the terminal.
 
 a = int(input("Enter a (integer) value: "))
 b = int(input("Enter a (integer) value: "))

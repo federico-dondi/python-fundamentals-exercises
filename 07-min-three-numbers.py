@@ -1,4 +1,4 @@
-# 07 - Given three (integer) numbers via input, calculate the minimum and print it on the terminal.
+# 07 - Given 3 (integer) numbers via input, calculate the minimum and print it on the terminal.
 
 a = int(input("Enter a (integer) value: "))
 b = int(input("Enter a (integer) value: "))

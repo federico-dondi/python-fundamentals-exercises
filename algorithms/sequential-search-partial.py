@@ -1,4 +1,4 @@
-sequentialvalue = int(input("Enter a (integer) value: "))
+value = int(input("Enter a (integer) value: "))
 values = [
   82, 
   36, 

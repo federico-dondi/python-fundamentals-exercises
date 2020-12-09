@@ -1,0 +1,30 @@
+# calculate the no of times a substring is present in a string
+
+def calcualteSubstring(string,substring):
+	string_length = len(string)
+	substring_length = len(substring)
+	total = 0
+
+	for i in range(string_length):
+		if string[i] == substring[0]:
+			if string_length-i >= substring_length:
+				k = i
+				count = 0
+				for j in range(substring_length):
+					if string[k] != substring[j]:
+						break
+					count+=1
+					k+=1
+				if count == substring_length:
+					total+=1
+	return total
+
+
+string = 'queueueu'
+substring = 'ueu'
+
+print('string    :',string)
+print('substring :',substring)
+
+total = calcualteSubstring(string,substring)
+print('total     :',total)

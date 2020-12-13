@@ -1,0 +1,35 @@
+import math
+
+# less efficient
+def primeNumber(num):
+	for i in range(2,num//2):
+		if num%i == 0:
+			return False
+	return True
+
+# better
+def primeNumberV2(num):
+	max_divisor = int(math.sqrt(num))       # calculating the square root
+	for i in range(2,max_divisor+1):
+		if num%i == 0:
+			return False
+	return True
+
+# best 
+def primeNumberV3(num):
+	if num == 2:	
+		return True
+	if num%2 == 0 and num > 2:	# even number but not 2 
+		return False
+
+	# calculating the square root
+	max_divisor = int(math.sqrt(num))
+	# only for odd numbers
+	for i in range(3,max_divisor+1,2):
+		if num%i == 0:
+			return False
+	return True
+
+print(primeNumber(47))
+print(primeNumberV2(41))
+print(primeNumberV3(41))
